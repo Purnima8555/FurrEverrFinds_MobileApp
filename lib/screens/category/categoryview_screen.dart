@@ -161,7 +161,7 @@ class _SingleCategoryBodyState extends State<SingleCategoryBody> {
                           ),
                           Text(
                             "Rs. "+e.productPrice.toString(),
-                            style: TextStyle(fontSize: 15, color: Colors.green),
+                            style: TextStyle(fontSize: 15, color: Colors.brown),
                             textAlign: TextAlign.center,
                             maxLines: 2,
                           ),

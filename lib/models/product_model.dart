@@ -37,8 +37,6 @@ class ProductModel {
     imagePath: json["imagePath"],
   );
 
-
-
   factory ProductModel.fromFirebaseSnapshot(DocumentSnapshot<Map<String, dynamic>> json) => ProductModel(
     id: json.id,
     userId: json["user_id"],
@@ -49,7 +47,6 @@ class ProductModel {
     imageUrl: json["imageUrl"],
     imagePath: json["imagePath"],
   );
-
 
   Map<String, dynamic> toJson() => {
     "id": id,

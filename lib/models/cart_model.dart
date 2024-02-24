@@ -15,17 +15,15 @@ class CartModel {
     return CartModel.fromJson(data);
   }
 
-
   factory CartModel.fromJson(Map<String, dynamic> json) => CartModel(
     items: List<CartItem>.from(json["items"]!.map((x) => CartItem.fromJson(x))),
     user_id: json["user_id"],
   );
 
-
   Map<String, dynamic> toJson() => {
     "id": id,
-    "items": List<dynamic>.from(items.map((x) => x.toJson())),
     "user_id": user_id,
+    "items": List<dynamic>.from(items.map((x) => x.toJson())),
   };
 }
 
@@ -38,7 +36,6 @@ class CartItem {
     data["id"] = doc.id;
     return CartItem.fromJson(data);
   }
-
 
   factory CartItem.fromJson(Map<String, dynamic> json) => CartItem(
     product: ProductModel.fromJson(json["product"]),

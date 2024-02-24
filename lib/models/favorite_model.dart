@@ -21,12 +21,12 @@ class FavoriteModel {
     userId: json["user_id"],
     productId: json["product_id"],
   );
+
   factory FavoriteModel.fromFirebaseSnapshot(DocumentSnapshot<Map<String, dynamic>> json) => FavoriteModel(
     id: json.id,
     userId: json["user_id"],
     productId: json["product_id"],
   );
-
 
   Map<String, dynamic> toJson() => {
     "user_id": userId,
