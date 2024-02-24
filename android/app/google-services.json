@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1073256641406",
+    "project_id": "furreverrfinds",
+    "storage_bucket": "furreverrfinds.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073256641406:android:c2cf719495a032a131792f",
+        "android_client_info": {
+          "package_name": "com.example.furreverr_finds"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGl4mSgO3wHuxMP3YTSDm8g1tX2433ZK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
