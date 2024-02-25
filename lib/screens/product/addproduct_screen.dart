@@ -25,8 +25,8 @@ class _AddProductScreenState extends State<AddProductScreen> {
     _ui.loadState(true);
     try {
       final ProductModel data = ProductModel(
-        // imagePath: imagePath, // Remove imagePath
-        imageUrl: _imageUrlController.text, // Use text from imageUrl controller
+
+        imageUrl: _imageUrlController.text,
         categoryId: selectedCategory,
         productDescription: _productDescriptionController.text,
         productName: _productNameController.text,
@@ -74,7 +74,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.brown,
-        title: Text("Add a product"),
+        title: Text("Add product:"),
       ),
       body: Consumer<CategoryViewModel>(
         builder: (context, categoryVM, child) {
@@ -151,15 +151,15 @@ class _AddProductScreenState extends State<AddProductScreen> {
                       },
                     ),
                     SizedBox(height: 15,),
-                    TextFormField( // Text input for image URL
+                    TextFormField(
                       controller: _imageUrlController,
                       keyboardType: TextInputType.text,
                       decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
                         focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
                         border: InputBorder.none,
-                        labelText: "Image URL", // Label for image URL input
-                        hintText: 'Enter image URL', // Hint text for image URL input
+                        labelText: "Image URL",
+                        hintText: 'Enter image URL',
                       ),
                     ),
                     SizedBox(height: 15,),

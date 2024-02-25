@@ -15,7 +15,6 @@ void main() {
       var data = ProductModel(
         userId: "1",
         imageUrl: "",
-        imagePath: "",
         id: "2",
         productName: "test product",
         categoryId: "3",
