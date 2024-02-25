@@ -8,9 +8,9 @@ void main() {
   FirebaseService.db = FakeFirebaseFirestore();
   ProductRepository repo = ProductRepository();
 
-  // add products
+  // products
   test(
-    "add product",
+    "save product",
         () async {
       var data = ProductModel(
         userId: "1",
@@ -22,8 +22,8 @@ void main() {
         productPrice: 100,
       );
 
-      final res = await repo.addProducts(product: data);
-      expect(res, true);
+      final result = await repo.addProducts(product: data);
+      expect(result, true);
       print("Test Successful");
     },
   );

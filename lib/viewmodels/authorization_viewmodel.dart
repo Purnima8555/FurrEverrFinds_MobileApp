@@ -27,25 +27,15 @@ class AuthViewModel with ChangeNotifier {
 
   Future<UserCredential> login(String email, String password) async {
     try {
-      // Sign in the user with email and password
-      UserCredential userCredential = await FirebaseService.firebaseAuth.signInWithEmailAndPassword(email: email, password: password);
 
-      // Get the UID of the logged-in user
+      UserCredential userCredential = await FirebaseService.firebaseAuth.signInWithEmailAndPassword(email: email, password: password);
       String uid = userCredential.user!.uid;
 
-      // Retrieve the user data from Firestore using the UID
       UserModel loggedInUser = await AuthRepository().getUserDetail(uid, null);
-
-      // Set the loggedInUser with retrieved user data
       _loggedInUser = loggedInUser;
-
-      // Update _user with the current user
       _user = userCredential.user;
-
-      // Notify listeners of the changes
       notifyListeners();
 
-      // Return the user credential
       return userCredential;
     } catch (err) {
       rethrow;
