@@ -11,7 +11,7 @@ import 'package:furreverr_finds/screens/product/myproductlist_screen.dart';
 import 'package:furreverr_finds/screens/product/productview_screen.dart';
 import 'package:furreverr_finds/screens/splash_screen.dart';
 
-import 'package:furreverr_finds/services/local_notification_service.dart';
+import 'package:furreverr_finds/services/notification_service.dart';
 import 'package:furreverr_finds/viewmodels/authorization_viewmodel.dart';
 import 'package:furreverr_finds/viewmodels/category_viewmodel.dart';
 import 'package:furreverr_finds/viewmodels/global_ui_viewmodel.dart';

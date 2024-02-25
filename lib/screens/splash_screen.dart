@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:provider/provider.dart';
 
-import '../services/local_notification_service.dart';
+import '../services/notification_service.dart';
 import '../viewmodels/authorization_viewmodel.dart';
 
 class SplashScreen extends StatefulWidget {

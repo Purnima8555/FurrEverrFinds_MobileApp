@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/user_model.dart';
-import '../../services/local_notification_service.dart';
+import '../../services/notification_service.dart';
 import '../../viewmodels/authorization_viewmodel.dart';
 import '../../viewmodels/global_ui_viewmodel.dart';
 
