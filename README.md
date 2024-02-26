@@ -1,4 +1,4 @@
-# furreverr_finds
+# furreverr_finds (E-commerce for Pet products)
 
 A new Flutter project.
 
